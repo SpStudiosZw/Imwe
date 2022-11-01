@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+  <html lang="">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="hero.1.0.0.js"></script>
+    <script src="fusion.1.0.0.js"></script>
+    </head>
+  <body>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #e6dbb0;
+  }
+  body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-element {
+    position: absolute;
+  }
+  .fusion--player {
+    background-color: #e6dbb0;
+  }
+  
+  
+        #guid_8180847c_74f0_4546_9791_8e141ce669b5 {
+  position: absolute;
+  width: 390px;
+  height: 844px;
+  background-color: #e6dbb0;
+}
+#guid_2f36d694_60b9_44ee_b8e8_658553d9014f {
+  width: 184px;
+  font-family: Anurati;
+  font-size: 27px;
+  color: #000;
+  font-weight: 400;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 105, 13);
+}
+#guid_01fce125_c044_4d61_b79b_cb2a35962e5f {
+  width: 80px;
+  height: 31px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 19, 65);
+  pointer-events: none;
+}
+#guid_aea71525_9f92_420f_90c3_fb7e4f5553f5 {
+  width: 80px;
+  height: 31px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 117, 65);
+  pointer-events: none;
+}
+#guid_fe8c1497_ee81_44d4_9913_a72129bf9365 {
+  width: 80px;
+  height: 31px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 215, 65);
+  pointer-events: none;
+}
+#guid_50a2d630_9143_4c6c_b093_2534993bd8c7 {
+  width: 80px;
+  height: 31px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 313, 65);
+  pointer-events: none;
+}
+#guid_82566533_76fa_4748_9b97_179cf18e8bf7 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -0.5, 7.5);
+}
+#guid_7a75f98a_89f1_4e83_aa40_8c4688701369 {
+  width: 24px;
+  height: 0px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 19.5, 15.5);
+  pointer-events: none;
+}
+#guid_50f4d46e_161f_4b02_9036_fad4c5dbbd8a {
+  width: 24px;
+  height: 0px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 19.5, 22.5);
+  pointer-events: none;
+}
+#guid_891c0cf0_21cf_4e6f_ad38_b3d50b958bed {
+  width: 24px;
+  height: 0px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 19.5, 30.5);
+  pointer-events: none;
+}
+#guid_a209c497_2eca_4634_a858_ab5669f73ee3 {
+  width: 358px;
+  height: 302px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 16, 123);
+  background-color: rgba(252, 221, 97, 0.35);
+}
+#guid_1cf1ca2d_3e08_4232_b69e_61caa9fbe078 {
+  width: 358px;
+  height: 188px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 16, 123);
+  background-color: #fff;
+}
+#guid_9e880633_576e_4c91_ab77_6c1e454525bf {
+  width: 321px;
+  height: 35px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 35, 364);
+  background-color: #fff;
+  border-radius: 11px 11px 11px 11px;
+}
+
+      
+
+  </style>
+
+  
+
+        <!-- /////////////////////// -->
+        <!-- Player -->
+        <div class="wrapper" style="position: relative; width: 100%; height: 100%;">
+          <div id="player" class="fusion--player" style="width: 100%; height: 100%; ">
+            <div class="fusion--viewport">
+            
+            
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_8180847c_74f0_4546_9791_8e141ce669b5">
+              <div class="fusion--scene--content">
+                
+<div id="guid_8180847c_74f0_4546_9791_8e141ce669b5" class="artboard scene" >
+<div id="guid_2f36d694_60b9_44ee_b8e8_658553d9014f" class="hero-element" >SP.MOVIES
+</div>
+<div id="guid_01fce125_c044_4d61_b79b_cb2a35962e5f" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 0px;">
+        <path id="guid_01fce125_c044_4d61_b79b_cb2a35962e5f-path" d="M 15.500 0 L 64.500 0 C 73.060 0 80 6.940 80 15.500 C 80 24.060 73.060 31 64.500 31 L 15.500 31 C 6.940 31 0 24.060 0 15.500 C 0 6.940 6.940 0 15.500 0 Z" fill="#e6dbb0"  stroke-width="3" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_aea71525_9f92_420f_90c3_fb7e4f5553f5" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 0px;">
+        <path id="guid_aea71525_9f92_420f_90c3_fb7e4f5553f5-path" d="M 15.500 0 L 64.500 0 C 73.060 0 80 6.940 80 15.500 C 80 24.060 73.060 31 64.500 31 L 15.500 31 C 6.940 31 0 24.060 0 15.500 C 0 6.940 6.940 0 15.500 0 Z" fill="none" stroke="#c8be95" stroke-width="3" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_fe8c1497_ee81_44d4_9913_a72129bf9365" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 0px;">
+        <path id="guid_fe8c1497_ee81_44d4_9913_a72129bf9365-path" d="M 15.500 0 L 64.500 0 C 73.060 0 80 6.940 80 15.500 C 80 24.060 73.060 31 64.500 31 L 15.500 31 C 6.940 31 0 24.060 0 15.500 C 0 6.940 6.940 0 15.500 0 Z" fill="none" stroke="#c8be95" stroke-width="3" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_50a2d630_9143_4c6c_b093_2534993bd8c7" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: 0px;">
+        <path id="guid_50a2d630_9143_4c6c_b093_2534993bd8c7-path" d="M 15.500 0 L 64.500 0 C 73.060 0 80 6.940 80 15.500 C 80 24.060 73.060 31 64.500 31 L 15.500 31 C 6.940 31 0 24.060 0 15.500 C 0 6.940 6.940 0 15.500 0 Z" fill="none" stroke="#c8be95" stroke-width="3" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_82566533_76fa_4748_9b97_179cf18e8bf7" class="hero-element" >
+<div id="guid_7a75f98a_89f1_4e83_aa40_8c4688701369" class="hero-element" >
+      <svg width="300" height="300" style="overflow: visible; position: absolute; left: 0px; top: 0px; pointer-events: none;">
+        <line id="guid_7a75f98a_89f1_4e83_aa40_8c4688701369-line"
+              x1="0" y1="0" x2="24" y2="0"
+              stroke="#707070"
+              stroke-width="3"
+                
+              style="pointer-events: all;"/>    
+      </svg>
+    
+</div>
+<div id="guid_50f4d46e_161f_4b02_9036_fad4c5dbbd8a" class="hero-element" >
+      <svg width="300" height="300" style="overflow: visible; position: absolute; left: 0px; top: 0px; pointer-events: none;">
+        <line id="guid_50f4d46e_161f_4b02_9036_fad4c5dbbd8a-line"
+              x1="0" y1="0" x2="24" y2="0"
+              stroke="#707070"
+              stroke-width="3"
+                
+              style="pointer-events: all;"/>    
+      </svg>
+    
+</div>
+<div id="guid_891c0cf0_21cf_4e6f_ad38_b3d50b958bed" class="hero-element" >
+      <svg width="300" height="300" style="overflow: visible; position: absolute; left: 0px; top: 0px; pointer-events: none;">
+        <line id="guid_891c0cf0_21cf_4e6f_ad38_b3d50b958bed-line"
+              x1="0" y1="0" x2="24" y2="0"
+              stroke="#707070"
+              stroke-width="3"
+                
+              style="pointer-events: all;"/>    
+      </svg>
+    
+</div>
+</div>
+<div id="guid_a209c497_2eca_4634_a858_ab5669f73ee3" class="hero-element" >
+</div>
+<div id="guid_1cf1ca2d_3e08_4232_b69e_61caa9fbe078" class="hero-element" >
+</div>
+<div id="guid_9e880633_576e_4c91_ab77_6c1e454525bf" class="hero-element" >
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            </div>
+          </div>
+        </div>
+
+      
+
+
+  <!-- Hero/Fusion Player -->
+  <script>
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        window.player = new fusion.Player({
+          id: 'player',
+          // debug: true, 
+          scenes: [
+            
+            { 
+              id: 'guid_8180847c_74f0_4546_9791_8e141ce669b5', 
+              type: 'flat', 
+              width: 390, 
+              height: 844,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+          ]
+        });
+        player.loadScene('guid_8180847c_74f0_4546_9791_8e141ce669b5');      
+      });
+    
+  </script>
+
+  <!-- Hero Scenes -->
+  <script>
+    
+      //---
+      // Scene: guid_8180847c_74f0_4546_9791_8e141ce669b5
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_8180847c_74f0_4546_9791_8e141ce669b5');          
+    
+        }, 1);
+      }); // Scene end    
+    
+  </script>
+
+  <!-- Hero Timelines -->
+  <script>
+    
+    //---
+    // Scene: guid_8180847c_74f0_4546_9791_8e141ce669b5
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_8180847c_74f0_4546_9791_8e141ce669b5');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+  </script>
+
+  
+  
+</body>
+</html>
